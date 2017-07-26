@@ -1,0 +1,18 @@
+/*************************************************
+ * golden ratio-based spacing
+ *  
+ */
+
+@function ratio($decimal) {
+    @return $decimal * 1.61803398875rem;
+}
+
+
+/*************************************************
+ * rem-based spacing
+ *  
+ */
+
+@function rem($base, $px) {
+    @return ($px / $base) * 1rem;
+}

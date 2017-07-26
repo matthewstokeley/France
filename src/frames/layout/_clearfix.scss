@@ -1,0 +1,30 @@
+// http://blog.teamtreehouse.com/a-better-clearfix-with-sass
+.clearfix, %clearfix {
+    &:before {
+        content: "";
+        display: table;
+        @extend .clear--both;
+    }
+    &:after {
+        content: "";
+        display: table;
+        @extend .clear--both;
+    }
+}
+
+@mixin clearfix {
+    &:before {
+        content: "";
+        display: table;
+        @extend .clear--both;
+    }
+    &:after {
+        content: "";
+        display: table;
+        @extend .clear--both;
+    }
+}
+
+.clear--both {
+    clear: both;
+}

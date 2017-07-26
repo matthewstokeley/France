@@ -1,0 +1,135 @@
+@mixin button($backgroundColor, $color: map-get($colors, 'primary')) {
+	@extend .cursor--pointer;
+	@extend .border--none;
+	@extend .margin--none;
+	font-size: 1rem;
+	padding: 0.4rem 0.5rem;
+	color: $color;
+	background: $backgroundColor;
+}
+
+@mixin large-button($backgroundColor, $color: map-get($colors, 'primary'), $borderColor: #EA2E49) {
+	@extend .border--none;
+	@extend .background--none;
+	@extend .background-color--white;
+	@extend .cursor--pointer;
+	padding: 1rem;
+	border: $borderColor;
+	margin-right: 1rem;
+	background: $backgroundColor;
+    color: $color;
+}
+
+@mixin small-button($backgroundColor, $color: map-get($colors, 'primary'), $borderColor: #EA2E49) {
+	@extend .background--none;
+	@extend .border--none;
+	@extend .font-size--small;
+	@extend .cursor--pointer;
+    padding: 0.3rem;
+	background: $backgroundColor;
+    color: $color;
+}
+
+@mixin circle-button {
+	@extend .border--none;
+	@extend .text-align--center;
+	@extend .background--none;
+	@extend .font-size--small;
+	@extend .border-radius;
+	border-radius: 2rem;
+}
+
+
+
+// .btn {
+//     font-size: 12px;
+//     text-decoration: none;
+//     color: #fff;
+//     background-color: map-get($colors, 'secondary');
+//     border: 0;
+//     border: 1px solid map-get($colors, 'secondary');
+//     border-radius: 18px;
+//     padding: 4px 36px 8px;
+//     //border-top-right-radius: 29px;
+//     text-align: center;
+//     display: inline-block;
+//     transition: all 0.3s;
+//     /* float: right; */
+//     //border-bottom-right-radius: 29px;
+// }
+
+// .btn:hover {
+//     background-color: darken(map-get($colors, 'secondary'), 5%);
+// }
+
+// .btn--alert {
+//     background-color: #fff;
+//     border: 3px solid #c0392b;
+//     color: #000;
+// }
+
+// .btn--icon {
+//     vertical-align: middle;
+//     padding-right: 5px;
+//     font-size: 18px;
+// }
+
+// .btn--content {
+//     vertical-align: middle;
+// }
+
+// .button--small {
+// }
+
+// %button--content--small {
+// 	font-size: 13px;
+// 	font-family: $secondary-font-family;
+// }
+
+
+// .btn {
+//     transition: box-shadow 0.15s;
+// }
+
+// .btn:active {
+//     box-shadow: inset 0 3px 10px #000;
+//     outline: 0;
+//     color: #fff;
+// }
+
+// .btn:focus {
+//     outline: 0;
+// }
+
+
+
+// .btn--success {
+//     display: none;
+// }
+
+// .btn--loader {
+//     display: none;
+//     position: relative;
+//     margin-left: 5px;
+//     margin-top: 2px;
+//     width: 12px;
+//     height: 12px;
+
+//     -webkit-animation: circle infinite .75s linear;
+//        -moz-animation: circle infinite .75s linear;
+//          -o-animation: circle infinite .75s linear;
+//             animation: circle infinite .75s linear;
+
+//     border: 2px solid #fff;
+//     border-top-color: rgba(35, 109, 158, .9);
+//     border-right-color: rgba(35, 109, 158, .9);
+//     border-bottom-color: rgba(35, 109, 158, .9);
+//     border-radius: 100%;
+// }
+
+// .delete .btn--loader {
+//     border-top-color: rgba(184, 47, 39, .9);
+//     border-right-color: rgba(184, 47, 39, .9);
+//     border-bottom-color: rgba(184, 47, 39, .9);
+// }
+

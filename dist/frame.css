@@ -1,0 +1,35 @@
+/* vendor */
+/* end vendor */
+/* utilities */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+section, aside {
+  display: block;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+textarea:focus, input:focus {
+  outline: 0;
+  border: 0;
+}
+
+/**
+ * @module pixel-based grid
+ */
+/**
+ * A place for custom mixins if neccessary.
+ */
+/* end utilities  */
+
+/*# sourceMappingURL=frame.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,YAAY;AAEZ,gBAAgB;AAIhB,eAAe;ACRf,UAAW;EACP,MAAM,EAAE,CAAC;EAAE,OAAO,EAAE,CAAC;;;AAGzB,qFAAoE;EAChE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;;AAGd,cAAe;EACX,OAAO,EAAE,KAAK;;;AAGlB,MAAO;EACN,eAAe,EAAE,IAAI;;;AAGtB,2BAA4B;EAC3B,OAAO,EAAE,CAAC;EACV,MAAM,EAAC,CAAC;;;ACnBT;;GAEG;ACFH;;GAEG;AHaH,oBAAoB",
+"sources": ["../src/main.scss","../src/utilities/_reset.scss","../src/utilities/_grid.scss","../src/utilities/_utils.scss"],
+"names": [],
+"file": "frame.css"
+}

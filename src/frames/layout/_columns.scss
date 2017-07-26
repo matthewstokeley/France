@@ -1,0 +1,65 @@
+$gutter: 1;
+
+@function get-width($columns) {
+	@return ((100 / $columns) - ($gutter)) * 1%;
+}
+
+@function get-gutter-width() {
+	@return (($gutter/2) * 1%);
+}
+
+
+// scss interface for map type
+@mixin columns($type) {
+	// @todo if map has key
+	
+	$name: map-get($type, 'name');
+	$selector: map-get($type, 'selector');
+
+	@for $i from 2 through 5 {
+
+	    %#{map-get($numberToWord, $i)}-#{$name}-columns {
+			
+			@extend %clearfix;
+			
+			&> #{$selector} {
+			    width: get-width($i);
+				display: inline-block;
+			}
+
+			$ii: $i;
+
+			@while $ii > 0 {
+
+				@if ($ii == $i) {
+					
+					$child: $i + 'n';
+
+					&> #{$selector}:nth-child(#{$child}) {
+						margin-right: get-gutter-width();
+					}
+				}
+
+				$child: $i + 'n+' + $ii;
+
+				@if ($ii == 1) {
+					&> #{$selector}:nth-child(#{$child}) {
+						margin-left: get-gutter-width();
+					}
+				}
+
+				@if (($ii != $i) and ($ii != 1)) {
+					&> #{$selector}:nth-child(#{$child}) {
+						 margin-left: get-gutter-width();
+					}
+				}
+
+				$ii: $ii - 1;	
+			}
+	    }
+	}	
+}
+
+@include columns($list-columns);
+@include columns($div-columns);
+

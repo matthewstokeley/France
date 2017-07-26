@@ -1,0 +1,11 @@
+// @todo make link classes for each color in color map
+
+a {
+    color: map-get($colors, 'primary');
+    text-decoration: none;
+    line-height: inherit;
+}
+
+a:hover, a:focus {
+    color: lighten(map-get($colors, 'primary'), 5%);
+}

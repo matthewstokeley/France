@@ -1,0 +1,59 @@
+/**
+ * @module pixel-based grid
+ */
+@mixin boxShortcut($selector, $box: false, $top: false, $right: false, $bottom: false, $left: false) {
+  $args: length($box);
+  // clear args
+  //@if $args > 1 and length(nth($box,1)) > 1 or nth($box,1) == none }
+
+  // assign variables
+  @if $args == 4 {
+      $left: nth($box, 4);
+      $bottom: nth($box, 3);
+      $right: nth($box, 2);
+      $top: nth($box, 1);
+  }
+    @else if $args == 3 {
+      $left: nth($box, 2);
+      $bottom: nth($box, 3);
+      $right: nth($box, 2);
+      $top: nth($box, 1);
+    }
+    @else if $args == 2 {
+      $right: nth($box, 2);
+      $left: nth($box, 2);
+      $bottom: nth($box, 1);
+      $top: nth($box, 1);
+    }
+    @else if $args == 1 {
+      $right: nth($box, 1);
+      $left: nth($box, 1);
+      $bottom: nth($box, 1);
+      $top: nth($box, 1);
+    }
+
+      // assign selectors
+      #{$selector}-top: #{$top * $grid-unit};
+      #{$selector}-right: #{$right * $grid-unit};
+      #{$selector}-bottom: #{$bottom * $grid-unit};
+      #{$selector}-left: #{$left * $grid-unit};
+
+}
+
+@mixin gridElement($length, $height:inherit, $padding:0, $gutter:0) {
+  width: #{$length * $grid-unit};
+  @if type-of($height) == number {
+    height: #{$height * $grid-unit};
+  } @else {
+    height: $height;
+  }
+  @include boxShortcut('padding', $padding);
+  @include boxShortcut('margin', $gutter);
+
+}
+
+@mixin column($width, $height, $padding, $margin, $float: left) {
+  @include gridElement($width, $height, $padding, $margin);
+    float: $float;
+}
+

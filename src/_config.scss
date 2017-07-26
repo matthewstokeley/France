@@ -1,0 +1,201 @@
+/*************************************************
+ * Table of Contents
+ *
+ * 1. Global Settings
+ * 2. Typography
+ * 		- Body
+ * 		- Headers
+ * 3. Colors
+ * 4  Design Accents
+ * 5. Layout
+ *      - Css Grids
+ * 		- Media Queries
+ * 		- Grid
+ * 		- Columns
+ * 		- width
+ * 6.  Vendor Settings
+ * 
+ */
+
+/*************************************************
+ * Global Settings
+ */
+$vendor: 'cooler';
+
+
+
+/*************************************************
+ * Typography
+ * 
+ */
+
+$font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-size: 11px;
+$letter-spacing: 0;
+$secondary-font-family: "Source Sans Pro", Helvetica Neue, Arial, sans-serif;
+
+/**
+ * Headers
+ */
+$mobile-headers: ( 
+    h1: 2.57142857143rem, 
+    h2: 2.71698113208rem, 
+    h3: 1.35849056604rem, 
+    h4: 1rem);
+
+$desktop-headers: ( 
+	h1: 4.0rem, 
+	h2: 2.71698113208rem, 
+	h3: 1.1875rem, 
+	h4: 1.2rem, 
+	h5: 1.8rem, 
+	h6: 1.5rem);
+
+
+/*************************************************
+ * Colors
+ */
+
+$colors: (
+	primary: #333745,
+	secondary: #77C4D3,
+	tertiary: #DAEDE2,
+	quarternary: #EA2E49,
+	quinary: #F6F792
+);
+
+$grayscale: (
+	primary: #f5f5f5,
+	secondary: #cccccc,
+	tertiary: #999999,
+	quarternary: #5a5a5a,
+	quinary: #000
+);
+
+$status-colors: (
+	success: lightgreen,
+	error: #FF4136,
+	waiting: lightgrey
+);
+
+$white: #fff;
+
+
+/*************************************************
+ * Design Accents
+ */
+
+$border-radius: 6px;
+$box-shadow: 0 0 10px #dadada;
+$border: 1px solid #dadada;
+$body-background: #f2f2f2;
+
+
+
+/*************************************************
+ * Layout
+ *  
+ */
+
+
+/**
+ * CSS Grids
+ */
+
+$grids: (
+);
+
+/**
+ * Display (Media Queries)
+ * 
+ */
+
+$breakpoints: (
+    mobile: 0px, 
+    phablet: 550px, 
+    tablet: 768px, 
+    desktop: 1024px, 
+    hd: 1440px);
+
+/**
+ * Grid
+ *  - for use with the `grid` utility
+ */
+$grid-unit: 72px;
+
+/**
+ * Columns
+ *  - for use with the `columns` utility
+ */
+$list-columns: ( 
+	name: 'list',
+	selector: 'li'
+);
+
+$div-columns: (
+	name: 'div',
+	selector: 'div'
+);
+
+/**
+ * Width
+ */
+
+$container-width: 80vw;
+$wrapper: 3.57142857143rem;
+
+/**
+ * Z Index
+ */
+
+$depth: (
+	1: 999,
+	2: 9999,
+	3: 99999,
+	4: 999999,
+	5: 9999999,
+	6: 99999999
+);
+
+
+
+/************************************
+* Vendor Settings
+*
+*/
+
+
+/*
+ * Dialog
+ */
+$dialog-background: rgba(0, 0, 0, 0.8);
+
+/*
+ * Slider
+ */
+
+/*
+ * Forms
+ */
+
+/************************************
+* Misc
+*
+*/
+$numberToWord: (
+	1: "one",
+	2: "two",
+	3: "three",
+	4: "four",
+	5: "five",
+	6: "six"
+);
+
+$numberToDescription: (
+	1: "primary",
+	2: "secondary",
+	3: "tertiary",
+	4: "quarternary",
+	5: "quinary",
+	6: "pentary"
+);

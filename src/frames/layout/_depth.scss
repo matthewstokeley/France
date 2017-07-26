@@ -1,0 +1,9 @@
+/*******************
+* Depth
+*/
+
+@for $i from 1 through 5  {
+	.depth--#{map-get($numberToDescription, $i)} {
+		z-index: map-get($depth, $i);
+	}
+}

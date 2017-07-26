@@ -1,0 +1,29 @@
+body, html {
+    font-size: $font-size;
+    font-family: $font-family;
+    letter-spacing: $letter-spacing;
+    background: $body-background;
+    overflow-x: hidden;
+}
+
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333745+2,396b69+100 */
+	background: #333745; /* Old browsers */
+	background: -moz-linear-gradient(top, #333745 2%, #396b69 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #333745 2%,#396b69 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #333745 2%,#396b69 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333745', endColorstr='#396b69',GradientType=0 ); /* IE6-9 */
+	min-height: 100vh;
+}
+
+
+/**
+ * `rem` units allow us to define responsive type for the entire site 
+ * by changing the font-size property of the `html` element. 
+ */
+
+// @include display-is(map-get($breakpoints, 'desktop')) {
+//     html {
+//         font-size: 16px;
+//     }
+// }

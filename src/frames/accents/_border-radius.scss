@@ -1,0 +1,23 @@
+.border-radius {
+	border-radius: $border-radius;
+}
+
+.border-radius--half {
+	border-radius: $border-radius / 2;
+}
+
+.border-radius--large {
+	border-radius: $border-radius + ($border-radius / 2);
+}
+
+.border-radius--double {
+	border-radius : $border-radius * 2;
+}
+
+.border-radius--single {
+	border-radius: 1px;
+}
+
+.border-radius--none {
+	border-radius: 0;
+}

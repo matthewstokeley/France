@@ -1,0 +1,12 @@
+.font-color--white {
+	color: #fff;
+}
+
+@for $i from 1 through 5 {
+	.font-color--#{map-get($numberToDescription, $i)} {
+		color: map-get($colors, map-get($numberToDescription, $i));
+	}
+	.font-grayscale--#{map-get($numberToDescription, $i)} {
+		color: map-get($grayscale, map-get($numberToDescription, $i));
+	}
+}
