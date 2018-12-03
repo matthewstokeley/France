@@ -1,16 +1,28 @@
 ### frames 
 
-an scss framework
+an scss framework.  This is the second iteration of this project, although in hindsight, I like the first version.  Frames was originally inteded as a framework, then the scope expanded into providing templates and defaults.  THe library is provided as is.
 
-1. `npm install && grunt build`
+##### Installation
 
-2. configure the config file ./config
+`npm install && grunt build`
+
+
+
+##### A word of caution
+
+Frames are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to cascading or using css operators.  In this regard, `frames` is experimental but there might be a use case.  
+
+##### Instructions
+
+```
+1. configure the config file ./config
 
 <i>note:</i> frames in ./frames use config variables to create extendable parent classes, mixins and placeholders. frames are organized by concern - accents, layout and type.  tag-level frames for links and buttons are also provided. 
 
-3. extend frames to create blocks etc in ./app 
+2. extend frames to create blocks etc in ./app 
+```
 
-##### example
+##### Example
 
 ```
 .block__entity--small {
