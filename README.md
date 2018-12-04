@@ -1,16 +1,15 @@
 ### frames 
 
-an scss framework.  This is the second iteration of this project, although in hindsight, I like the first version.  Frames was originally inteded as a framework, then the scope expanded into providing templates and defaults.  THe library is provided as is.
+an opinionated scss framework.
 
 ##### Installation
 
 `npm install && grunt build`
 
 
-
 ##### A word of caution
 
-Frames are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to cascading or using css operators.  In this regard, `frames` is experimental but there might be a use case.  
+`frames` are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to cascading or using css operators.  In this regard, `frames` is experimental but there might be a use case.  
 
 ##### Instructions
 
