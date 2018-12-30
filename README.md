@@ -9,7 +9,7 @@ an opinionated scss framework.
 
 ##### A word of caution
 
-`frames` are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to cascading or using css operators.  In this regard, `frames` is experimental but there might be a use case.  
+`frames` are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to built-in but less performative approaches to selecting - cascading and css operators.  CSS output is granular - *properties shouldn't repeat*.  Coupled with the `bem` naming convention, this produces highly-specified selectors.  The main flaw, or at least one of them, in the design of this performance-driven approach to element selectors and properties is file size.  Selector performance is already fast - the larger file size (due to repeating selectors) probably outweighs performance and maintenance concerns.  Tests are needed.  In this regard, `frames` is experimental, however, there might be a use case.  `
 
 ##### Instructions
 
@@ -27,7 +27,10 @@ an opinionated scss framework.
 .block__entity--small {
 	// extend an app parent class
 	@extend .block__entity;
-	// override a property while clustering the compiled css around a property
+	// override a property by inheriting a 
+	// typography-specific class.
+	// this will output selectors clustered around
+	// this property (configured in ./config.scss)
 	@extend .font-size__small;
 }
 ```
