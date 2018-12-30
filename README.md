@@ -9,7 +9,9 @@ an opinionated scss framework.
 
 ##### A word of caution
 
-`frames` are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to built-in but less performative approaches to selecting - cascading and css operators.  CSS output is granular - *properties shouldn't repeat*.  Coupled with the `bem` naming convention, this produces highly-specified selectors.  The main flaw, or at least one of them, in the design of this performance-driven approach to element selectors and properties is file size.  Selector performance is already fast - the larger file size (due to repeating selectors) probably outweighs performance and maintenance concerns.  Tests are needed.  In this regard, `frames` is experimental, however, there might be a use case.  `
+`frames` are essentially css components using scss, making extensive use of `@extend` to implement inheritance within the property field, as opposed to built-in but less performative approaches to selecting - cascading and css operators.  CSS output is granular - *properties shouldn't repeat*.  Coupled with the `bem` naming convention, this produces highly-specified selectors.  The main flaw, or at least one of them, in the design of this performance-driven approach to element selectors and properties is file size.  Selector performance is already fast - the larger file size (due to repeating selectors) probably outweighs performance and maintenance concerns.  Tests are needed.  In this regard, `frames` is experimental, however, there might be a use case. 
+
+The name is a reference to a common metaphor used to teach theoretical perspectives.
 
 ##### Instructions
 
@@ -29,7 +31,7 @@ an opinionated scss framework.
 	@extend .block__entity;
 	// override a property by inheriting a 
 	// typography-specific class.
-	// this will output selectors clustered around
+	// this will output selectors 'clustered' or organized around
 	// this property (configured in ./config.scss)
 	@extend .font-size__small;
 }
