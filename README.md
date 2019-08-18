@@ -28,7 +28,7 @@ frames use config variables to create extendable parent classes, mixins and plac
 ##### Example
 
 ```
-.block__entity--small {
+.block__entity--modifier {
 	// inherit a parent class
 	@extend .block__entity;
 	// override a property by inheriting a 
