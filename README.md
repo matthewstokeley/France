@@ -36,5 +36,7 @@ frames use config variables to create extendable parent classes, mixins and plac
 	@extend .font-size__small;
 }
 ```
+```
 @todo separate configuration scss'
 @todo sass
+```
