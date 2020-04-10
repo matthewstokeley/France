@@ -1,4 +1,4 @@
-### frames 
+### France 
 
 an opinionated scss framework.
 
@@ -12,8 +12,6 @@ an opinionated scss framework.
 -vvv
 
 `frames` are essentially css components written in scss, utilizing extended, configured, domain-specific inheritance.
-
-The name is a reference to a common metaphor used to teach theoretical perspectives.
 
 ##### Instructions
 
